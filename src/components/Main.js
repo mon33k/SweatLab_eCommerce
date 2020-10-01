@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-class Main extends React.Component {
+class Main extends Component {
 
 
 render() {
