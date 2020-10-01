@@ -1,0 +1,8 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLinks > a {
+    padding: 20px;
+}

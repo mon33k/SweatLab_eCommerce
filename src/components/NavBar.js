@@ -1,18 +1,26 @@
 import React, {Component} from 'react'
 import { render } from 'react-dom';
 import { Route, Switch, Link } from 'react-router-dom'
+import '../stylesheets/NavBar.css'
 
 import Main from './Main';
 import Contact from './Contact'
+import Cart from './Cart';
 
 const NavBar = () => {
 
     return (
         <div>
-            <div>
-                <Link to='/landing'>Home</Link>
-                <Link to='/shop'>Shop</Link>
-                <Link to='/contact'>Contact</Link>
+            <div className="navbar-container">
+                <div className="navLinks">
+                    <Link to='/landing'>Home</Link>
+                    <Link to='/shop'>Shop</Link>
+                    <Link to='/contact'>Contact</Link>
+                </div>
+                <div className='navLinks'>
+                    <Link to='/cart'>Cart</Link>
+                    <Link to='/profile'>Profile</Link>
+                </div>
             </div>
 
             <Switch>
@@ -26,6 +34,10 @@ const NavBar = () => {
 
                 <Route path='/contact'>
                     <Contact/>
+                </Route>
+
+                <Route path='/cart'>
+                    <Cart/>
                 </Route>
             </Switch>
         </div>
