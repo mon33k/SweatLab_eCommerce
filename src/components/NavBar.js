@@ -7,7 +7,7 @@ import Contact from './Contact'
 import Cart from './Cart';
 
 const NavBar = () => {
-
+    
     return (
         <div>
             <div className="navbar-container">
